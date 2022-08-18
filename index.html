@@ -1,0 +1,65 @@
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="styles.css" />
+
+<div class="container-logo">
+    <img class="logo" src="./img/Logo.svg" alt="logo">
+</div>
+
+<div class="container contenedor-gral">
+
+        <div class="container container-left">
+
+            <textarea name="textarea-in" id="texto-in" placeholder="Ingrese su texto aquí" autofocus></textarea>
+            <div class="aviso">
+                <img src="./img/Vector.svg" alt="aviso">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="container container-buttons">
+                <div class="botones-encriptado">
+                    <button id="encriptar" onclick="encriptarTexto(true)"> Encriptar </button>
+                </div>
+                <div class="botones-encriptado">
+                    <button id="desencriptar" onclick="encriptarTexto(false)"> Desencriptar </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container container-right">
+
+            <div class="box box-inicial" id="box-inicial">
+
+                <div class="container-munieco">
+                    <img src="./img/Muñeco.svg">
+                </div>
+
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desee encriptar o desencriptar</p>
+
+            </div>
+
+
+            <div class="box box-final" id="box-final">
+                <textarea name="textarea-out" id="texto-out" readonly></textarea>
+                <div class="container container-button-copiar">
+                    <div class="boton-copiar">
+                        <button id="copiar" onclick="copiar()">Copiar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+</div>
+<footer>
+   Jesica Reyman 
+   <br>
+   Buenos Aires, Argentina
+</footer>
+
+
+
+<script src="script.js"></script>
+
